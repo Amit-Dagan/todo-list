@@ -52,3 +52,10 @@ This project follows a **Clean Architecture inspired** layering (lightweight and
 
 - I did not abstract UUID generation behind a repository, as it is used in a single place.  
   Introducing an extra dependency for this would not meaningfully improve testability or maintainability.
+  
+  ![Alt text](flutter_03.png)
+  ![Alt text](flutter_04.png)
+  ![Alt text](flutter_05.png)
+  ![Alt text](flutter_06.png)
+  ![Alt text](flutter_07.png)
+
