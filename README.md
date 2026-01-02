@@ -52,6 +52,7 @@ This project follows a **Clean Architecture inspired** layering (lightweight and
 
 - I did not abstract UUID generation behind a repository, as it is used in a single place.  
   Introducing an extra dependency for this would not meaningfully improve testability or maintainability.
+<<<<<<< HEAD
 
 
 ### Credits & License
@@ -60,3 +61,12 @@ This project follows a **Clean Architecture inspired** layering (lightweight and
 - UI design inspired by a Figma community design by **gorogurax**:  
   https://www.figma.com/community/file/1301223631360583764
 - Free to use — have fun!
+=======
+  
+  ![Alt text](flutter_03.png)
+  ![Alt text](flutter_04.png)
+  ![Alt text](flutter_05.png)
+  ![Alt text](flutter_06.png)
+  ![Alt text](flutter_07.png)
+
+>>>>>>> 4b29ac5c79bc261e97e31e8004186e7db6cac787
