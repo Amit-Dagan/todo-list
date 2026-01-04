@@ -62,22 +62,20 @@ class MainScreen extends StatelessWidget {
 
                   itemBuilder: (context, index) {
                     final task = allTasks[index];
-                    return Flexible(
-                      child: Dismissible(
-                        onDismissed: (direction) {
-                          context.read<MainScreenCubit>().deleteTask(task.id);
-                        },
-                        key: ValueKey(task.id),
-                        child: Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 8.0),
-                          child: TaskWidget(
-                            task: task,
-                            onToggle: (value) {
-                              context.read<MainScreenCubit>().toggleTaskCompletion(
-                                task.id,
-                              );
-                            },
-                          ),
+                    return Dismissible(
+                      onDismissed: (direction) {
+                        context.read<MainScreenCubit>().deleteTask(task.id);
+                      },
+                      key: ValueKey(task.id),
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 8.0),
+                        child: TaskWidget(
+                          task: task,
+                          onToggle: (value) {
+                            context.read<MainScreenCubit>().toggleTaskCompletion(
+                              task.id,
+                            );
+                          },
                         ),
                       ),
                     );
